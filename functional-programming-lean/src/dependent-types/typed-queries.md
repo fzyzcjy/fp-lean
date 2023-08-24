@@ -38,7 +38,7 @@ The solution is to use pattern matching to refine the types of `x` and `y`:
 {{#example_decl Examples/DependentTypes/DB.lean dbEq}}
 ```
 In this version of the function, `x` and `y` have types `Int`, `String`, and `Bool` in the three respective cases, and these types all have `BEq` instances.
-The definition of `dbEq` can be used to define a `BEq` instance for the types that are coded for by `DBType`:
+The definition of `DBType.beq` can be used to define a `BEq` instance for the types that are coded for by `DBType`:
 ```lean
 {{#example_decl Examples/DependentTypes/DB.lean BEqDBType}}
 ```
